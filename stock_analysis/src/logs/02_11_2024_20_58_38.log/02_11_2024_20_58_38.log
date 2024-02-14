@@ -1,0 +1,15 @@
+[ 2024-02-11 21:08:07,674 ] 70 absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+[ 2024-02-11 21:22:59,932 ] 70 absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+[ 2024-02-11 21:24:07,801 ] 65 root - INFO - Model saved to ./models/AAPL
+[ 2024-02-11 21:24:07,812 ] 70 absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+[ 2024-02-11 21:25:11,769 ] 65 root - INFO - Model saved to ./models/AAPL
+[ 2024-02-11 21:30:30,990 ] 70 absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+[ 2024-02-11 21:31:39,661 ] 65 root - INFO - Model saved to ./models/AAPL
+[ 2024-02-11 21:42:27,452 ] 70 absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+[ 2024-02-11 21:43:39,914 ] 65 root - INFO - Model saved to ./models/AAPL
+[ 2024-02-11 21:44:57,042 ] 70 absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+[ 2024-02-11 21:46:00,012 ] 65 root - INFO - Model saved to ./models/AAPL
+[ 2024-02-11 21:47:00,395 ] 70 absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+[ 2024-02-11 21:48:03,849 ] 65 root - INFO - Model saved to ./models/AAPL
+[ 2024-02-11 21:55:34,680 ] 70 absl - WARNING - At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+[ 2024-02-11 21:56:42,543 ] 65 root - INFO - Model saved to ./models/AAPL
