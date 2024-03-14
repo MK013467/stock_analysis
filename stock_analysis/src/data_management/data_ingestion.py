@@ -5,13 +5,15 @@ from sklearn.preprocessing import MinMaxScaler
 from src.logger import logging
 import src.exception_handler as CustomException
 from data_builder import DataBuilder
+import warnings
 
+warnings.filterwarnings("ignore")
 
 @dataclass
 class DataIngestionConfig:
-    raw_data_path:str = os.path.join("../data")
-    train_data_path =  str = os.path.join("../data","train")
-    test_data_path:str = os.path.join("../data", "test")
+    raw_data_path:str = os.path.join("../../data")
+    train_data_path =  str = os.path.join("../../data", "train")
+    test_data_path:str = os.path.join("../../data", "test")
 
 class DataIngestion:
 
@@ -53,10 +55,12 @@ class DataIngestion:
         test_df.loc[:, 'adjclose'] = test_scaled.ravel()
         return train_df, test_df
 
+tickers = ["MSFT", "NKE", "AAPL" , "PEP", "GE" , "SBUX", "AMZN", "GOOG", "META","NFLX"]
+window_size = 100
+
 if __name__ == "__main__":
-    start_date = "2011-01-01"
+    start_date = "2010-01-01"
     end_date = "2020-12-31"
-    tickers = ["MSFT", "NKE", "AAPL" , "PEP", "GE" , "SBUX"]
     data_ingestion = DataIngestion()
 
     for ticker in tickers:
@@ -64,11 +68,5 @@ if __name__ == "__main__":
         data_builder.create_data()
         data_builder.save_csv()
         data_ingestion.split_data(ticker)
-
-        train_filepath = os.path.join(data_ingestion.ingestion_config.train_data_path, f"{ticker}.csv")
-        test_filepath = os.path.join(data_ingestion.ingestion_config.test_data_path, f"{ticker}.csv")
-
-        # Scale the train and test data
-
 
 

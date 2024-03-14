@@ -1,3 +1,5 @@
+import pickle
+
 import matplotlib.pyplot as plt
 import numpy as np
 import os
@@ -5,6 +7,9 @@ import os
 import pandas as pd
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import MinMaxScaler
+from joblib import load
+
+from src.exception_handler import CustomException
 
 
 def evaluate_model(model, X_test, y_test):
@@ -43,3 +48,11 @@ def plot_prediction(y_test, predictions, ticker="Stock", save_path=None):
     else:
         plt.show()
 
+# this function loads model.pkl file
+def load_object(file_path):
+    try:
+        with open(file_path, "rb") as file_obj:
+            return pickle.load(file_obj)
+
+    except Exception as e:
+        raise CustomException(e)

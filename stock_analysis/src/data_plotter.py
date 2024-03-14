@@ -36,5 +36,5 @@ class DataPlotter:
         plt.tight_layout
         plt.show()
 
-df = pd.read_csv("./data/train/MSFT.csv")
+df = pd.read_csv("../data/train/MSFT.csv")
 DataPlotter().plotDataframe(df, title="MSFT")
